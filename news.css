@@ -1,0 +1,105 @@
+/*전체 적용되는 부분*/
+body{background: black; 
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*타이틀 밑 줄의 굵기*/
+hr{width:80%;
+    border: 0;
+    height: 3px;
+    background: white;}
+
+/*타이틀*/
+h1{color: white;
+    text-align: center;
+    font-size: 50px;}
+
+p{width:80%;
+    margin-top: 120px;
+    font-size: 30px;
+    color: white;}
+
+.sajok{font-size: 20px;}
+
+/*전체 글씨 색*/
+a{color: white;}
+
+.input{font-size: 12px;}
+
+/*위의 메뉴 부분의 위치조정*/
+li{display: inline-block;
+    text-align: center;
+    list-style: none;
+    width: 30%; 
+    font-size: 35px;}
+
+li:first-child{border-radius: 10px 0 0 10px;}
+li:last-child{border-radius: 0 10px 10px 0;}
+
+/*검색창*/
+.find{height: 30px;
+    list-style: none;
+    float: left;
+    width: 80%; 
+    margin: 0  10px 0 30px; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    background-color: black;
+    color: white;}
+    
+.find2{height: 30px;
+    border-radius: 5px;
+    float: left;
+    background: black;
+    color: white;}
+.find2:hover{
+    color: black;
+    background-color: white;
+}
+
+/*아이디 비밀번호 디자인*/
+#login{width: 200px ;
+    height: 70%;
+    float: right;
+    background-color: black;
+    color: white;}
+
+.clik{border-radius: 5px;
+    background: black;
+    color: white;
+}
+
+.clik:hover{color: black;
+    background-color: white;
+}
+
+/*옆의 메뉴바 부분 디자인*/
+#event{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+#event::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#event li{float:inline-start}
+
+#event a{display: block;
+    color:black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+#event a.active{
+    background-color: #2c2b2b;
+    color: white;
+}
+#event a:hover:not(.active){
+    background-color: whitesmoke;
+    color: black;
+}
