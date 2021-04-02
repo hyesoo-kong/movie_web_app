@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang = 'ko' dir ="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입 폼 만들기</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name = "viewport" cont="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <div class="container">
+        <div class="title">회원가입</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">아이디</span>
+                    <input type="text" id="userId" class="int" maxlength="20" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">닉네임</span>
+                    <input type="text" id="userNickName" maxlength="10" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">비밀번호</span>
+                    <input type="password" id="userPswd1" class="int" maxlength="20" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">비밀번호 재확인</span>
+                    <input type="password" id="userPswd2" class="int" maxlength="20" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">이름</span>
+                    <input type="text" id="userName" class="int" maxlength="20" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">성별</span>
+                    <span >
+                        <select id ="gender" class="sel">
+                            <option>성별</option>
+                            <option value="1">남자</option>
+                            <option value="2">여자</option>
+                            <option value="3">선택안함</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="input-box">
+                    <span class="details">이메일</span>
+                    <input type="text" id="userEmail" class="int" maxlength="100" placeholder="선택입력" >
+                </div>
+            </div>
+            <div class="geder-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <input type="radio" name="gender" id="dot-4">
+                <span class="geder-tiltle">선호 장르</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gnder">로맨스</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gnder">코미디</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gnder">SF/판타지</span>
+                    </label>
+                    <label for="dot-4">
+                        <span class="dot four"></span>
+                        <span class="gnder">공포 / 스릴러</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="가입하기">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
